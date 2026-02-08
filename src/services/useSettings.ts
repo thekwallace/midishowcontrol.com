@@ -16,7 +16,7 @@ export interface Settings {
 const STORAGE_KEY = 'mscnow-settings';
 
 const DEFAULT_SETTINGS: Settings = {
-  deviceID: { type: 'all' },
+  deviceID: { type: 'specific', value: 1 },
   commandFormat: CommandFormat.Lighting,
   delayBetweenCues: 1.0,
   autoGoOffSequential: true,

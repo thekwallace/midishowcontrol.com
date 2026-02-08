@@ -10,6 +10,7 @@ import {
   getDestinations,
   type MIDIDestination,
 } from './services/webMidiManager';
+import { trackWizardStep, trackSettingsOpened } from './services/analytics';
 import './App.css';
 
 type Step = 0 | 1 | 2;
@@ -88,7 +89,7 @@ function App() {
         <h1>MSCNow</h1>
         <button
           className="btn btn-icon"
-          onClick={() => setShowSettings(!showSettings)}
+          onClick={() => { if (!showSettings) trackSettingsOpened(); setShowSettings(!showSettings); }}
           title="Settings"
         >
           &#9881;
@@ -118,7 +119,7 @@ function App() {
             <StepCuelist
               cueList={cueList}
               onCueListChange={setCueList}
-              onNext={() => setStep(1)}
+              onNext={() => { trackWizardStep(1); setStep(1); }}
             />
           )}
 
@@ -127,7 +128,7 @@ function App() {
               config={config}
               onCuesInputChange={setCuesInput}
               onBack={() => setStep(0)}
-              onNext={() => setStep(2)}
+              onNext={() => { trackWizardStep(2); setStep(2); }}
             />
           )}
 

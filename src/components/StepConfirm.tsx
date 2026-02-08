@@ -14,6 +14,8 @@ import {
   sendCueSequence,
   type MIDIDestination,
 } from '../services/webMidiManager';
+import { trackExport, trackSendLive } from '../services/analytics';
+import { detectInputType } from '../models/cueGenerator';
 
 interface Props {
   config: CueGeneratorConfig;
@@ -46,6 +48,8 @@ export function StepConfirm({
     const data = generateMIDIFile(events, midiOutputDeviceName);
     const filename = generateFilename(config.cueList, cueCount);
     downloadMIDIFile(data, filename);
+    const inputType = detectInputType(config.cuesInput, config.singleCueMode);
+    trackExport(inputType?.type ?? 'unknown', cueCount, config.commandFormat);
   }, [config, midiOutputDeviceName, cueCount]);
 
   const handleSendLive = useCallback(async () => {
@@ -53,6 +57,9 @@ export function StepConfirm({
 
     cancelRef.current = false;
     setIsSending(true);
+
+    const inputType = detectInputType(config.cuesInput, config.singleCueMode);
+    trackSendLive(inputType?.type ?? 'unknown', cueCount, config.commandFormat);
 
     const events = generateEvents(config);
     const delayMs = config.delayBetweenCues * 1000;
