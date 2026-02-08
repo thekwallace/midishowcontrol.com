@@ -163,10 +163,8 @@ function App() {
             className="footer-app-card"
           >
             <span className="footer-app-desc">Prefer a native app?</span>
-            <div className="footer-app-badge">
-              <img src="/logo-128.png" alt="MSCNow" className="footer-app-icon" />
-              <span>MSCNow</span>
-            </div>
+            <img src="/logo-128.png" alt="MSCNow" className="footer-app-icon" />
+            <span>MSCNow</span>
           </a>
           <a
             href="https://www.kwallace.com/msc2osc"
@@ -175,13 +173,16 @@ function App() {
             className="footer-app-card"
           >
             <span className="footer-app-desc">Need to bridge MSC to OSC?</span>
-            <div className="footer-app-badge">
-              <img src="/msc2osc-128.png" alt="MSC2OSC" className="footer-app-icon" />
-              <span>MSC2OSC</span>
-            </div>
+            <img src="/msc2osc-128.png" alt="MSC2OSC" className="footer-app-icon" />
+            <span>MSC2OSC</span>
           </a>
         </div>
 
+        <div className="footer-links">
+          <a href="/support.html">Support</a>
+          <a href="/privacy.html">Privacy</a>
+        </div>
+        <p className="footer-copyright">&copy; 2025-2026 kwallace.com LLC. All rights reserved.</p>
       </footer>
       <CookieBanner />
     </div>
