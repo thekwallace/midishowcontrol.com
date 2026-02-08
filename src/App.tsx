@@ -145,6 +145,25 @@ function App() {
           )}
         </main>
       )}
+      <footer className="app-footer">
+        <div className="footer-banner">
+          <p>midishowcontrol.com is now free and open for everyone. No account or download required.</p>
+        </div>
+
+        <div className="footer-download">
+          <p>Prefer a native app?</p>
+          <a
+            href="https://github.com/thekwallace/mscnow/releases/latest/download/MSCNow.dmg"
+            className="btn btn-secondary"
+          >
+            Download MSCNow for macOS
+          </a>
+        </div>
+
+        <p className="footer-cookies">
+          This site uses cookies via Google Analytics to understand usage patterns. No personal data is collected.
+        </p>
+      </footer>
     </div>
   );
 }

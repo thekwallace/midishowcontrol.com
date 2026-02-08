@@ -18,7 +18,7 @@ const STORAGE_KEY = 'mscnow-settings';
 const DEFAULT_SETTINGS: Settings = {
   deviceID: { type: 'specific', value: 1 },
   commandFormat: CommandFormat.Lighting,
-  delayBetweenCues: 1.0,
+  delayBetweenCues: 5.0,
   autoGoOffSequential: true,
   autoGoOffList: false,
   autoGoOffSingle: false,
