@@ -212,6 +212,7 @@
 
 .step-actions {
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin-top: 8px;
 }
@@ -389,25 +390,42 @@
   line-height: 1.5;
 }
 
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-links p {
-  margin: 0;
+.footer-apps p {
+  margin: 0 0 12px;
   font-size: 13px;
   color: var(--text-muted);
 }
 
-.footer-links p + p {
-  margin-top: 6px;
+.footer-app-icons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
-.footer-links .btn {
-  font-size: 14px;
+.footer-app-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 12px;
+  transition: color 0.15s;
+}
+
+.footer-app-icons a:hover {
+  color: var(--text);
+}
+
+.footer-app-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  transition: transform 0.15s;
+}
+
+.footer-app-icons a:hover .footer-app-icon {
+  transform: scale(1.08);
 }
 
 /* Cookie consent banner */
