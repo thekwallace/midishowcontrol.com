@@ -30,6 +30,7 @@ export function StepCues({ config, onCuesInputChange, onBack, onNext }: Props) {
         <button onClick={onBack} className="btn btn-back">← Cuelist {config.cueList}</button>
       </div>
       <h2>What cue numbers should be included?</h2>
+      <p className="input-hint">Enter a number for a sequential range (e.g. 10 = cues 1–10), or list specific cues separated by commas.</p>
       <input
         ref={inputRef}
         type="text"

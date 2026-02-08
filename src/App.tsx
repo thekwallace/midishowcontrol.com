@@ -158,7 +158,7 @@ function App() {
         <div className="footer-links">
           <p>Prefer a native app?</p>
           <a
-            href="https://kwallace.com/mscnow"
+            href="https://www.kwallace.com/mscnow"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-secondary"
@@ -167,7 +167,7 @@ function App() {
           </a>
           <p>Need to bridge MSC to OSC?</p>
           <a
-            href="https://kwallace.com/msc2osc"
+            href="https://www.kwallace.com/msc2osc"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-secondary"

@@ -22,6 +22,7 @@ export function StepCuelist({ cueList, onCueListChange, onNext }: Props) {
   return (
     <div className="step">
       <h2>What cuelist number are we using?</h2>
+      <p className="input-hint">The cuelist number on your console that will receive the cues.</p>
       <input
         ref={inputRef}
         type="text"

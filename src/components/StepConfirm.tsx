@@ -89,6 +89,7 @@ export function StepConfirm({
       </div>
 
       <h2>Does this look right?</h2>
+      <p className="input-hint">Review your cue sequence, then export a MIDI file or send live.</p>
 
       <div className="preview-box">
         <p>{preview}</p>
