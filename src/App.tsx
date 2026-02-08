@@ -155,28 +155,31 @@ function App() {
           <p>midishowcontrol.com is now free and open for everyone. No account or download required.</p>
         </div>
 
-        <div className="footer-apps">
-          <p>Check out our other apps</p>
-          <div className="footer-app-icons">
-            <a
-              href="https://www.kwallace.com/mscnow"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="MSCNow for macOS"
-            >
+        <div className="footer-app-grid">
+          <a
+            href="https://www.kwallace.com/mscnow"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-app-card"
+          >
+            <span className="footer-app-desc">Prefer a native app?</span>
+            <div className="footer-app-badge">
               <img src="/logo-128.png" alt="MSCNow" className="footer-app-icon" />
               <span>MSCNow</span>
-            </a>
-            <a
-              href="https://www.kwallace.com/msc2osc"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="MSC2OSC Bridge"
-            >
+            </div>
+          </a>
+          <a
+            href="https://www.kwallace.com/msc2osc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-app-card"
+          >
+            <span className="footer-app-desc">Need to bridge MSC to OSC?</span>
+            <div className="footer-app-badge">
               <img src="/msc2osc-128.png" alt="MSC2OSC" className="footer-app-icon" />
               <span>MSC2OSC</span>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
 
       </footer>
