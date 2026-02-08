@@ -10,7 +10,8 @@ import {
   getDestinations,
   type MIDIDestination,
 } from './services/webMidiManager';
-import { trackWizardStep, trackSettingsOpened } from './services/analytics';
+import { trackWizardStep, trackSettingsOpened, initAnalytics } from './services/analytics';
+import { CookieBanner } from './components/CookieBanner';
 import './App.css';
 
 type Step = 0 | 1 | 2;
@@ -45,6 +46,7 @@ function App() {
 
   useEffect(() => {
     initMidi();
+    initAnalytics();
   }, [initMidi]);
 
   // Auto GO_OFF logic: update includeReleaseCue when input type changes
@@ -160,10 +162,8 @@ function App() {
           </a>
         </div>
 
-        <p className="footer-cookies">
-          This site uses cookies via Google Analytics to understand usage patterns. No personal data is collected.
-        </p>
       </footer>
+      <CookieBanner />
     </div>
   );
 }
