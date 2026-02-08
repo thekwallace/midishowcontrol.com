@@ -90,7 +90,7 @@ function App() {
       <header className="app-header">
         <div className="app-title">
           <img src="/logo-128.png" alt="MSCNow" className="app-logo" />
-          <h1>MSCNow</h1>
+          <h1>midishowcontrol.com</h1>
         </div>
         <button
           className="btn btn-icon"
@@ -155,13 +155,24 @@ function App() {
           <p>midishowcontrol.com is now free and open for everyone. No account or download required.</p>
         </div>
 
-        <div className="footer-download">
+        <div className="footer-links">
           <p>Prefer a native app?</p>
           <a
-            href="https://github.com/thekwallace/mscnow/releases/latest/download/MSCNow.dmg"
+            href="https://kwallace.com/mscnow"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-secondary"
           >
-            Download MSCNow for macOS
+            MSCNow for macOS
+          </a>
+          <p>Need to bridge MSC to OSC?</p>
+          <a
+            href="https://kwallace.com/msc2osc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-secondary"
+          >
+            MSC2OSC Bridge
           </a>
         </div>
 

@@ -195,7 +195,7 @@
 .btn-icon {
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 40px;
   padding: 4px 8px;
   color: var(--text-muted);
 }
@@ -389,20 +389,24 @@
   line-height: 1.5;
 }
 
-.footer-download {
+.footer-links {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.footer-download p {
+.footer-links p {
   margin: 0;
   font-size: 13px;
   color: var(--text-muted);
 }
 
-.footer-download .btn {
+.footer-links p + p {
+  margin-top: 6px;
+}
+
+.footer-links .btn {
   font-size: 14px;
 }
 

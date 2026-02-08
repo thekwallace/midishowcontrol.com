@@ -27,9 +27,9 @@ export function StepCues({ config, onCuesInputChange, onBack, onNext }: Props) {
   return (
     <div className="step">
       <div className="step-header">
-        <button onClick={onBack} className="btn btn-back">← List {config.cueList}</button>
+        <button onClick={onBack} className="btn btn-back">← Cuelist {config.cueList}</button>
       </div>
-      <h2>Which cues?</h2>
+      <h2>What cue numbers should be included?</h2>
       <input
         ref={inputRef}
         type="text"

@@ -84,9 +84,11 @@ export function StepConfirm({
     <div className="step">
       <div className="step-header">
         <button onClick={onBack} className="btn btn-back" disabled={isSending}>
-          ← Back
+          ← Cues
         </button>
       </div>
+
+      <h2>Does this look right?</h2>
 
       <div className="preview-box">
         <p>{preview}</p>
