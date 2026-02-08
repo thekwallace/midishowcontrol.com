@@ -88,7 +88,10 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>MSCNow</h1>
+        <div className="app-title">
+          <img src="/logo-128.png" alt="MSCNow" className="app-logo" />
+          <h1>MSCNow</h1>
+        </div>
         <button
           className="btn btn-icon"
           onClick={() => { if (!showSettings) trackSettingsOpened(); setShowSettings(!showSettings); }}

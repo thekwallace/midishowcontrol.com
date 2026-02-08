@@ -31,6 +31,18 @@
   margin-bottom: 32px;
 }
 
+.app-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+}
+
 .app-header h1 {
   font-size: 24px;
   font-weight: 700;
